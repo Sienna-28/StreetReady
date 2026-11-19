@@ -12,7 +12,7 @@ Gamified investment-banking interview prep: technical study tracks, daily games,
 
 ## Finance information standards
 
-The live version should use linked journalism for discovery and primary sources to verify material deal details. The interface is designed to surface concise original summaries and outbound source links, rather than copy full articles.
+The daily source registry includes Bloomberg, The Wall Street Journal, Financial Times, CNBC, Yahoo Finance, MarketWatch, The Economist, Forbes, and Kiplinger. The live version uses linked journalism for discovery and primary sources to verify material deal details. The interface is designed to surface concise original summaries and outbound source links, rather than copy full articles.
 
 ## Run locally
 
