@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="StreetReady — gamified investment banking interview prep." />
+    <title>StreetReady | IB recruiting, made daily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#dashboard" aria-label="StreetReady home"><span class="brand-mark">S</span><span>Street<span>Ready</span></span></a>
+        <nav aria-label="Primary navigation">
+          <button class="nav-item active" data-view="dashboard"><span>⌂</span>Daily Desk</button>
+          <button class="nav-item" data-view="study"><span>◫</span>Study Library</button>
+          <button class="nav-item" data-view="games"><span>◈</span>Games Arcade</button>
+          <button class="nav-item" data-view="banks"><span>▦</span>My Banks <b>3</b></button>
+          <button class="nav-item" data-view="markets"><span>↗</span>Markets & Deals <i></i></button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="streak-card"><span class="flame">✦</span><div><strong>7 day streak</strong><small>Best: 12 days</small></div></div>
+          <button class="profile"><span class="avatar">SL</span><span><strong>Sienna Lopez</strong><small>Analyst in training</small></span><em>⌄</em></button>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar"><button class="mobile-menu" aria-label="Open menu">☰</button><div class="crumb" id="crumb">TUESDAY, NOVEMBER 18 <span>•</span> DAILY DESK</div><div class="top-actions"><button class="icon-button" aria-label="Notifications">♧<b></b></button><button class="help-button">How it works</button></div></header>
+
+        <section class="view active" id="dashboard">
+          <div class="hero-row">
+            <div><p class="eyebrow">YOUR DAILY EDGE</p><h1>Good evening, <em>Sienna.</em></h1><p class="intro">Four small wins today. One much stronger interview tomorrow.</p></div>
+            <div class="rank-card"><div class="rank-top"><span>LEVEL 08</span><strong>1,840 <small>XP</small></strong></div><div class="xp-track"><span></span></div><p>460 XP until <b>Associate Track</b></p></div>
+          </div>
+          <div class="daily-grid">
+            <article class="focus-card"><div class="card-kicker"><span class="live-dot"></span> TODAY'S FOCUS <button class="more">•••</button></div><div class="focus-inner"><div><span class="overline">DCF & VALUATION</span><h2>Can you defend<br>your WACC?</h2><p>Four questions that separate memorization from a real answer.</p><button class="primary" data-open-drill>Start 8 min drill <span>→</span></button></div><div class="orbit"><div class="orbit-core">8<br><small>MIN</small></div><span class="orbit-dot one"></span><span class="orbit-dot two"></span><span class="orbit-dot three"></span></div></div><div class="focus-footer"><span>+120 XP</span><span>INTERVIEW MODE</span><span>4 QUESTIONS</span></div></article>
+            <article class="brief-card"><div class="card-kicker">MARKETS & DEALS <button class="more">•••</button></div><span class="brief-tag">5-MINUTE BRIEF</span><h3>Today’s 5 things<br>to know</h3><p>Rates, deal flow, and one Consumer story worth knowing.</p><button class="text-button" data-view-link="markets">Read the briefing <span>→</span></button><div class="brief-bars"><i></i><i></i><i></i><i></i><i></i></div></article>
+          </div>
+          <div class="section-heading"><div><p class="eyebrow">KEEP THE MOMENTUM</p><h2>Choose your next move</h2></div><button class="text-button" data-view-link="games">Open Arcade <span>→</span></button></div>
+          <div class="moves-grid">
+            <button class="move-card game" data-view-link="games"><span class="move-icon purple">◎</span><span><small>DAILY GAME</small><strong>Multiple Match</strong><em>Group 16 terms into 4 deal themes</em></span><b>+60 XP</b></button>
+            <button class="move-card bank" data-view-link="banks"><span class="move-icon gold">▥</span><span><small>MY BANKS</small><strong>Moelis NY Warm-up</strong><em>74% ready · sharpen “Why Moelis”</em></span><b>8 MIN</b></button>
+            <button class="move-card review" data-open-drill><span class="move-icon mint">↺</span><span><small>SMART REVIEW</small><strong>12 questions are due</strong><em>Keep hard-earned answers fresh</em></span><b>+90 XP</b></button>
+          </div>
+          <div class="bottom-grid"><article class="progress-card"><div class="card-title"><h3>Your readiness</h3><button class="more">•••</button></div><div class="readiness"><div class="ring"><strong>74<small>%</small></strong></div><div><p><b>Moelis NY</b> interview readiness</p><span class="pill">ON TRACK</span><small>Next: firm knowledge & deal discussion</small></div></div><div class="skill-row"><span>Technicals <b>84%</b></span><div><i style="width:84%"></i></div></div><div class="skill-row"><span>Behavioral <b>71%</b></span><div><i style="width:71%"></i></div></div></article><article class="wins-card"><div class="card-title"><h3>Recent wins</h3><button class="more">•••</button></div><div class="win"><span>✦</span><p><b>DCF Builder</b><small>Mastered terminal value basics</small></p><time>Today</time></div><div class="win"><span>◆</span><p><b>Seven-day streak</b><small>Consistency looks good on you</small></p><time>Today</time></div></article></div>
+        </section>
+
+        <section class="view" id="study"><div class="page-heading"><p class="eyebrow">STUDY LIBRARY</p><h1>Build the <em>foundation.</em></h1><p>Learn it once, retrieve it under pressure, then explain it like a banker.</p></div><div class="source-tabs"><button class="selected">All sources</button><button>400 Questions</button><button>Holy Grail</button><button>WSP Red Book</button><button>My notes</button></div><div class="track-grid" id="track-grid"></div></section>
+
+        <section class="view" id="games"><div class="page-heading split"><div><p class="eyebrow">GAMES ARCADE</p><h1>Small games.<br><em>Real reps.</em></h1></div><p>Every minute here maps to a skill you will need in a real interview.</p></div><div class="game-hero"><div><span class="brief-tag">TODAY'S PUZZLE</span><h2>Multiple<br>Match</h2><p>Find the four hidden connections. Today: valuation, financing, and financial statements.</p><button class="primary" id="start-game">Play today’s puzzle <span>→</span></button></div><div class="tiles-preview"><i>WACC</i><i>FCF</i><i>EV</i><i>IRR</i><i>β</i><i>EPS</i><i>TV</i><i>MOIC</i></div></div><div class="games-grid"><article><span>◉</span><h3>DealDle</h3><p>Guess the finance term in six.</p><b>3 min · +40 XP</b></article><article><span>▦</span><h3>Three Statements</h3><p>Trace an event through the financials.</p><b>5 min · +75 XP</b></article><article><span>⇄</span><h3>Value Sprint</h3><p>Fast valuation and mental-math reps.</p><b>4 min · +50 XP</b></article></div></section>
+
+        <section class="view" id="banks"><div class="banks-heading"><div class="page-heading"><p class="eyebrow">MY BANKS</p><h1>Prep with a <em>point of view.</em></h1><p>What you need for each target—exactly when you need it.</p></div><button class="outline-button" id="add-bank">+ Add a bank</button></div><div class="bank-grid" id="bank-grid"></div><article class="bank-plan"><div><p class="eyebrow">YOUR NEXT MOELIS SESSION</p><h2>Ready to make<br>this specific?</h2></div><div class="plan-steps"><span><b>01</b> Review M&A technicals</span><span><b>02</b> Practice “Why Moelis?”</span><span><b>03</b> Discuss one recent deal</span></div><button class="primary" data-open-drill>Study for Moelis <span>→</span></button></article></section>
+
+        <section class="view" id="markets"><div class="markets-head"><div class="page-heading"><p class="eyebrow"><span class="live-dot"></span> REFRESHED DAILY</p><h1>Markets & <em>Deals.</em></h1><p>The five things worth knowing before your next coffee chat.</p></div><button class="outline-button" id="refresh-brief">↻ Refresh briefing</button></div><div class="source-note">Sourced from linked reporting and primary releases. Confirmed deal details are labeled <b>Primary source</b>.</div><div class="market-layout"><div><div class="section-heading compact"><div><p class="eyebrow">TUESDAY’S BRIEF</p><h2>Top 5 to know</h2></div><span class="updated" id="updated-time">Updated just now</span></div><div class="story-list" id="story-list"></div></div><aside class="deals-panel"><p class="eyebrow">RECENT DEALS</p><h3>Build your deal<br>vocabulary.</h3><div class="filter-row"><button class="selected" data-filter="All">All</button><button data-filter="Consumer">Consumer</button><button data-filter="Media">Media</button><button data-filter="FIG">FIG</button></div><div id="deal-list"></div><button class="text-button">Browse all deals <span>→</span></button></aside></div></section>
+      </main>
+    </div>
+    <dialog id="drill-modal"><button class="close-modal" aria-label="Close">×</button><p class="eyebrow">INTERVIEW MODE · QUESTION 1 OF 4</p><h2>Walk me through a DCF.</h2><p class="drill-copy">Answer out loud first. Then reveal a tight, interview-ready framework.</p><div class="timer">01:30</div><button class="primary" id="reveal-answer">Reveal framework <span>→</span></button><div class="answer-box" hidden><b>Start with projected unlevered FCF, discount it by WACC, add terminal value, then bridge from enterprise value to equity value.</b><p>Strong answers also explain the purpose of each step and name the key assumptions.</p></div></dialog>
+    <dialog id="game-modal"><button class="close-modal" aria-label="Close">×</button><p class="eyebrow">MULTIPLE MATCH · 0 OF 4 FOUND</p><h2>Find four groups of four.</h2><p>Choose terms that belong together, then submit your group.</p><div class="game-board" id="game-board"></div><button class="primary" id="submit-group">Submit group <span>→</span></button><p class="game-feedback" id="game-feedback"></p></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
