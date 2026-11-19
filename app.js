@@ -14,4 +14,25 @@ const drill=document.querySelector('#drill-modal');document.querySelectorAll('[d
 const game=document.querySelector('#game-modal');document.querySelector('#start-game').addEventListener('click',()=>{game.showModal();renderGame()});function renderGame(){document.querySelector('#game-board').innerHTML=gameTerms.map((t,i)=>`<button class="game-tile ${state.selected.includes(i)?'selected':''}" data-term="${i}">${t}</button>`).join('');document.querySelectorAll('.game-tile').forEach(b=>b.addEventListener('click',()=>{const id=+b.dataset.term;state.selected.includes(id)?state.selected=state.selected.filter(n=>n!==id):state.selected.length<4&&state.selected.push(id);renderGame()}))};document.querySelector('#submit-group').addEventListener('click',()=>{const feedback=document.querySelector('#game-feedback');feedback.textContent=state.selected.length!==4?'Choose four terms first.':'Nice attempt. Look for a shared framework or valuation concept.';state.selected=[];renderGame()});
 document.querySelectorAll('.filter-row button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter-row button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');renderDeals(b.dataset.filter)}));document.querySelector('#refresh-brief').addEventListener('click',e=>{document.querySelector('#updated-time').textContent='Updated just now';e.currentTarget.textContent='✓ Briefing refreshed'});document.querySelector('#add-bank').addEventListener('click',()=>alert('Bank picker is next: choose a bank, office, group, and recruiting stage.'));
 function renderSourceStack(){const sources=window.StreetReadyNewsSources?.priority||[];const panel=document.querySelector('.deals-panel');if(!panel||!sources.length)return;const stack=document.createElement('div');stack.className='source-stack';stack.innerHTML=`<span>DAILY BRIEFING SOURCES</span>${sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.name} ↗</a>`).join('')}`;panel.append(stack)}
+document.querySelector('#dashboard .eyebrow').textContent='STREETREADY // DAILY BRIEF';
+document.querySelector('#dashboard .intro').textContent='Build the instincts. Earn the edge. Show up ready.';
+// First-time state: progress begins only after the player completes real drills.
+document.querySelector('.streak-card strong').textContent='Start your streak';
+document.querySelector('.streak-card small').textContent='Complete one drill today';
+document.querySelector('.rank-top span').textContent='LEVEL 01';
+document.querySelector('.rank-top strong').innerHTML='0 <small>XP</small>';
+document.querySelector('.rank-card p').innerHTML='Begin a drill to unlock <b>Analyst Track</b>';
+document.querySelector('.xp-track span').style.width='0%';
+document.querySelector('.readiness .ring strong').innerHTML='0<small>%</small>';
+document.querySelector('.readiness p').innerHTML='<b>Your interview readiness</b>';
+document.querySelector('.readiness .pill').textContent='NOT STARTED';
+document.querySelector('.readiness small').textContent='Add a target bank to begin';
+document.querySelectorAll('.progress-card .skill-row b').forEach(el=>el.textContent='0%');
+document.querySelectorAll('.progress-card .skill-row i').forEach(el=>el.style.width='0%');
+document.querySelector('.wins-card').innerHTML='<div class="card-title"><h3>Wins to unlock</h3></div><div class="win"><span>◇</span><p><b>Your first badge is waiting</b><small>Finish any drill to start building your record.</small></p></div>';
+document.querySelector('.moves-grid .review strong').textContent='Start your first review';
+document.querySelector('.moves-grid .review em').textContent='A four-question warm-up is ready';
+document.querySelector('.moves-grid .review b').textContent='+40 XP';
 renderTracks();renderBanks();renderStories();renderDeals();renderSourceStack();
+document.querySelector('#bank-grid').innerHTML='<article class="bank-card" style="grid-column:1/-1;text-align:center;padding:42px"><span class="bank-stage">YOUR TARGET LIST</span><h3>Start with the banks you want most.</h3><p style="margin:10px auto 20px;max-width:360px">Add a firm, office, and group. StreetReady will build your interview tracker from there.</p><button class="primary" onclick="document.querySelector(\'#add-bank\').click()">Add your first bank <span>→</span></button></article>';
+document.querySelector('#games .games-grid article:first-child h3').textContent='Term Sheet';
